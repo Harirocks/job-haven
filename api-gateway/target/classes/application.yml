@@ -1,0 +1,19 @@
+server:
+  port: 8080   # Gateway runs on 8080 (clients hit this port)
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true   # Enable dynamic routing from Eureka
+          lower-case-service-id: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
