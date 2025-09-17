@@ -12,6 +12,7 @@
         <module name="common" />
         <module name="dashboard-service" />
         <module name="api-gateway" />
+        <module name="profile-service" />
         <module name="company-service" />
         <module name="notification-service" />
         <module name="discovery-service" />
